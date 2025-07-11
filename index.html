@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4 Page Layout Designer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Layout Controls</h2>
+            <form id="layout-form">
+                <div class="form-group">
+                    <label for="rows">Rows</label>
+                    <input type="number" id="rows" name="rows" value="12">
+                </div>
+                <div class="form-group">
+                    <label for="cols">Columns</label>
+                    <input type="number" id="cols" name="cols" value="4">
+                </div>
+                <div class="margin-controls">
+                    <div class="margin-top">
+                        <label for="margin-top">Top (mm)</label>
+                        <input type="number" id="margin-top" name="margin-top" value="5">
+                    </div>
+                    <div class="margin-middle">
+                        <div class="margin-left">
+                            <label for="margin-left">Left (mm)</label>
+                            <input type="number" id="margin-left" name="margin-left" value="5">
+                        </div>
+                        <div class="margin-right">
+                            <label for="margin-right">Right (mm)</label>
+                            <input type="number" id="margin-right" name="margin-right" value="5">
+                        </div>
+                    </div>
+                    <div class="margin-bottom">
+                        <label for="margin-bottom">Bottom (mm)</label>
+                        <input type="number" id="margin-bottom" name="margin-bottom" value="5">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="box-width">Box Width (mm)</label>
+                    <input type="number" id="box-width" name="box-width" value="48">
+                </div>
+                <div class="form-group">
+                    <label for="box-height">Box Height (mm)</label>
+                    <input type="number" id="box-height" name="box-height" value="24">
+                </div>
+                <div class="form-group">
+                    <label for="row-margin">Row Margin (mm)</label>
+                    <input type="number" id="row-margin" name="row-margin" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="col-margin">Column Margin (mm)</label>
+                    <input type="number" id="col-margin" name="col-margin" value="3">
+                </div>
+                <hr>
+                <h3>Font Sizes</h3>
+                <div class="form-group">
+                    <label for="font-size-title">Product Name (px)</label>
+                    <input type="number" id="font-size-title" name="font-size-title" value="18">
+                </div>
+                <div class="form-group">
+                    <label for="font-size-mrp">MRP (px)</label>
+                    <input type="number" id="font-size-mrp" name="font-size-mrp" value="15">
+                </div>
+                <div class="form-group">
+                    <label for="font-size-price">Actual Price (px)</label>
+                    <input type="number" id="font-size-price" name="font-size-price" value="15">
+                </div>
+                <div class="form-group">
+                    <label for="font-size-discount">Discount (px)</label>
+                    <input type="number" id="font-size-discount" name="font-size-discount" value="15">
+                </div>
+            </form>
+            <button id="print-btn">Print</button>
+        </div>
+        <div class="main-content">
+            <div class="preview-area">
+                <div id="horizontal-ruler"></div>
+                <div class="page-and-vertical-ruler">
+                    <div id="vertical-ruler"></div>
+                    <div id="a4-page">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,10 +1,10 @@
 import React from 'react';
-import PreviewArea from './PreviewArea';
+import A4Page from './A4Page';
 
-function MainContent({ layout, products }) {
+function MainContent({ layout, products, onClearProducts }) {
   return (
     <div className="main-content">
-      <PreviewArea layout={layout} products={products} />
+      <A4Page layout={layout} products={products} onClearProducts={onClearProducts} />
     </div>
   );
 }

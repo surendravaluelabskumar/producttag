@@ -15,13 +15,15 @@ function App() {
     boxHeight: 24,
     rowMargin: 0,
     colMargin: 3,
-    fontSizeTitle: 18,
-    fontSizeMrp: 15,
-    fontSizePrice: 15,
-    fontSizeDiscount: 15,
+    fontSizeTitle: 16,
+    fontSizeMrp: 14,
+    fontSizePrice: 14,
+    fontSizeDiscount: 14,
   });
 
   const [products, setProducts] = useState([]);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [selectedProducts, setSelectedProducts] = useState([]);
 
   useEffect(() => {
     fetch('/db.json')
@@ -29,10 +31,30 @@ function App() {
       .then((data) => setProducts(data.products));
   }, []);
 
+  const handleProductSelect = (product) => {
+    setSelectedProduct(product);
+  };
+
+  const handleAddProduct = () => {
+    if (selectedProduct) {
+      setSelectedProducts([...selectedProducts, selectedProduct]);
+    }
+  };
+
+  const handleClearProducts = () => {
+    setSelectedProducts([]);
+  };
+
   return (
     <div className="container">
-      <Sidebar layout={layout} setLayout={setLayout} />
-      <MainContent layout={layout} products={products} />
+      <Sidebar
+        layout={layout}
+        setLayout={setLayout}
+        onProductSelect={handleProductSelect}
+        onAddProduct={handleAddProduct}
+        selectedProduct={selectedProduct}
+      />
+      <MainContent layout={layout} products={selectedProducts} onClearProducts={handleClearProducts} />
     </div>
   );
 }

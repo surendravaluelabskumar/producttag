@@ -1,6 +1,6 @@
 import React from 'react';
 
-function A4Page({ layout, products }) {
+function A4Page({ layout, products, onClearProducts }) {
   const {
     rows,
     cols,
@@ -26,21 +26,16 @@ function A4Page({ layout, products }) {
     gridRowGap: `${rowMargin}mm`,
   };
 
-  const totalBoxes = rows * cols;
-  const boxes = [];
-  for (let i = 0; i < totalBoxes; i++) {
-    const product = products[i % products.length]; // Loop through products if not enough
-
+  const boxes = products.map((product, i) => {
     if (!product) {
-      boxes.push(<div className="box" key={i}></div>);
-      continue;
+      return <div className="box" key={i}></div>;
     }
 
     const { name, mrp, price, blinkIt, discount, buyonegetOne } = product;
 
-    boxes.push(
+    return (
       <div className="box" key={i}>
-        <div className="product-name">
+        <div className="product-name" style={{ fontSize: `${fontSizeTitle}px` }}>
           {name}
         </div>
         <div className="price-details">
@@ -66,12 +61,15 @@ function A4Page({ layout, products }) {
         </div>
       </div>
     );
-  }
+  });
 
   return (
-    <div id="a4-page" style={pageStyle}>
-      {boxes}
-    </div>
+    <>
+      <button onClick={onClearProducts} style={{marginBottom: "10px"}}>Clear All</button>
+      <div id="a4-page" style={pageStyle}>
+        {boxes}
+      </div>
+    </>
   );
 }
 

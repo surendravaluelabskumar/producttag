@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Sidebar from './Sidebar';
 import MainContent from './MainContent';
 import './style.css';
@@ -21,10 +21,18 @@ function App() {
     fontSizeDiscount: 15,
   });
 
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch('/db.json')
+      .then((response) => response.json())
+      .then((data) => setProducts(data.products));
+  }, []);
+
   return (
     <div className="container">
       <Sidebar layout={layout} setLayout={setLayout} />
-      <MainContent layout={layout} />
+      <MainContent layout={layout} products={products} />
     </div>
   );
 }

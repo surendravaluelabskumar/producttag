@@ -134,6 +134,9 @@ body {
     font-weight: bold;
     margin-bottom: 5px;
     text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .price-details {
@@ -141,6 +144,9 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .mrp-price-group {
@@ -157,6 +163,14 @@ body {
 
 .mrp {
     text-decoration: line-through;
+}
+
+.our-price {
+    color: green;
+}
+
+.blinkit-price {
+    color: red;
 }
 
 #print-btn {

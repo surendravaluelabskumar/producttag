@@ -1,0 +1,88 @@
+[
+  {
+    "name": "Cetaphil Gentle Skin Cleanser",
+    "mrp": 425,
+    "discount": 6,
+    "price": 399,
+    "blinkIt": 399
+  },
+  {
+    "name": "Cetaphil Oily Skin Cleanser",
+    "mrp": 699,
+    "discount": 8,
+    "price": 644,
+    "blinkIt": 650
+  },
+  {
+    "name": "O3+ Brightening & Whitening Face Wash",
+    "mrp": 285,
+    "discount": 6,
+    "price": 275,
+    "blinkIt": 285
+  },
+  {
+    "name": "Pond's Face Wash",
+    "mrp": 225,
+    "discount": 6,
+    "price": 212,
+    "blinkIt": 225
+  },
+  {
+    "name": "Lotus Professional Wash",
+    "mrp": 495,
+    "discount": 10,
+    "price": 445,
+    "blinkIt": 495
+  },
+  {
+    "name": "Gatsby hair wax",
+    "mrp": 375,
+    "discount": 5,
+    "price": 365
+  },
+  {
+    "name": "joy face wash ",
+    "mrp": 80,
+    "discount": 4,
+    "price": 74
+  },
+  {
+    "name": "Pure Home Room SPRAY",
+    "mrp": 169,
+    "discount": 18,
+    "price": 140
+  },
+  {
+    "name": "Cinthol Soap Set",
+    "mrp": 325,
+    "discount": 3,
+    "price": 315
+  },
+  {
+    "name": "Pears Set",
+    "mrp": 214,
+    "discount": 5,
+    "price": 205
+  },
+  {
+    "name": "Ghar SOP",
+    "mrp": 499,
+    "discount": 50,
+    "price": 250,
+    "buyonegetOne": true
+  },
+  {
+    "name": "Dr rashel face serum",
+    "mrp": 399,
+    "discount": 30,
+    "price": 280,
+    "blinkIt": 360
+  },
+  {
+    "name": "Cinthol Hand Sanitizer",
+    "mrp": 75,
+    "discount": 4,
+    "price": 72
+  }
+ 
+]

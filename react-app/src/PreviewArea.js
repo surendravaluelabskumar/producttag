@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import A4Page from './A4Page';
 
-function PreviewArea({ layout }) {
+function PreviewArea({ layout, products }) {
   const horizontalRulerRef = useRef(null);
   const verticalRulerRef = useRef(null);
 
@@ -58,7 +58,7 @@ function PreviewArea({ layout }) {
       <div id="horizontal-ruler" ref={horizontalRulerRef}></div>
       <div className="page-and-vertical-ruler">
         <div id="vertical-ruler" ref={verticalRulerRef}></div>
-        <A4Page layout={layout} />
+        <A4Page layout={layout} products={products} />
       </div>
     </div>
   );

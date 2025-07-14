@@ -1,88 +1,354 @@
 [
   {
-    "name": "Cetaphil Gentle Skin Cleanser",
-    "mrp": 425,
-    "discount": 6,
-    "price": 399,
-    "blinkIt": 399
+    "name":"Cetaphil Gentle Skin Cleanser",
+    "mrp":425,
+    "discount":6,
+    "price":399,
+    "blinkIt":399.0,
+    "buyonegetOne":null
   },
   {
-    "name": "Cetaphil Oily Skin Cleanser",
-    "mrp": 699,
-    "discount": 8,
-    "price": 644,
-    "blinkIt": 650
+    "name":"Cetaphil Oily Skin Cleanser",
+    "mrp":699,
+    "discount":8,
+    "price":644,
+    "blinkIt":650.0,
+    "buyonegetOne":null
   },
   {
-    "name": "O3+ Brightening & Whitening Face Wash",
-    "mrp": 285,
-    "discount": 6,
-    "price": 275,
-    "blinkIt": 285
+    "name":"O3+ Brightening & Whitening Face Wash",
+    "mrp":285,
+    "discount":4,
+    "price":275,
+    "blinkIt":285.0,
+    "buyonegetOne":null
   },
   {
-    "name": "Pond's Face Wash",
-    "mrp": 225,
-    "discount": 6,
-    "price": 212,
-    "blinkIt": 225
+    "name":"Pond'S Face Wash",
+    "mrp":225,
+    "discount":6,
+    "price":212,
+    "blinkIt":225.0,
+    "buyonegetOne":null
   },
   {
-    "name": "Lotus Professional Wash",
-    "mrp": 495,
-    "discount": 10,
-    "price": 445,
-    "blinkIt": 495
+    "name":"Lotus Professional Wash",
+    "mrp":495,
+    "discount":10,
+    "price":445,
+    "blinkIt":495.0,
+    "buyonegetOne":null
   },
   {
-    "name": "Gatsby hair wax",
-    "mrp": 375,
-    "discount": 5,
-    "price": 365
+    "name":"Gatsby Hair Wax",
+    "mrp":375,
+    "discount":3,
+    "price":365,
+    "blinkIt":null,
+    "buyonegetOne":null
   },
   {
-    "name": "joy face wash ",
-    "mrp": 80,
-    "discount": 4,
-    "price": 74
+    "name":"Joy Face Wash",
+    "mrp":80,
+    "discount":8,
+    "price":74,
+    "blinkIt":null,
+    "buyonegetOne":null
   },
   {
-    "name": "Pure Home Room SPRAY",
-    "mrp": 169,
-    "discount": 18,
-    "price": 140
+    "name":"Pure Home Room Spray",
+    "mrp":169,
+    "discount":17,
+    "price":140,
+    "blinkIt":null,
+    "buyonegetOne":null
   },
   {
-    "name": "Cinthol Soap Set",
-    "mrp": 325,
-    "discount": 3,
-    "price": 315
+    "name":"Cinthol Soap Set",
+    "mrp":325,
+    "discount":3,
+    "price":315,
+    "blinkIt":null,
+    "buyonegetOne":null
   },
   {
-    "name": "Pears Set",
-    "mrp": 214,
-    "discount": 5,
-    "price": 205
+    "name":"Pears Set",
+    "mrp":214,
+    "discount":4,
+    "price":205,
+    "blinkIt":null,
+    "buyonegetOne":null
   },
   {
-    "name": "Ghar SOP",
-    "mrp": 499,
-    "discount": 50,
-    "price": 250,
-    "buyonegetOne": true
+    "name":"Ghar Sop",
+    "mrp":499,
+    "discount":50,
+    "price":250,
+    "blinkIt":null,
+    "buyonegetOne":true
   },
   {
-    "name": "Dr rashel face serum",
-    "mrp": 399,
-    "discount": 30,
-    "price": 280,
-    "blinkIt": 360
+    "name":"Dr Rashel Face Serum",
+    "mrp":399,
+    "discount":30,
+    "price":280,
+    "blinkIt":360.0,
+    "buyonegetOne":null
   },
   {
-    "name": "Cinthol Hand Sanitizer",
-    "mrp": 75,
-    "discount": 4,
-    "price": 72
+    "name":"Cinthol Hand Sanitizer",
+    "mrp":75,
+    "discount":4,
+    "price":72,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Nivea Men Roll",
+    "mrp":125,
+    "discount":8,
+    "price":115,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Dove Intense Repair Hair Conditioner",
+    "mrp":285,
+    "discount":9,
+    "price":260,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Cinthol Lime Bath Soap",
+    "mrp":325,
+    "discount":5,
+    "price":310,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Mama Earth Face Wash",
+    "mrp":125,
+    "discount":4,
+    "price":120,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Rlps  Rosemary Water",
+    "mrp":125,
+    "discount":4,
+    "price":120,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Drrashel Face Serum",
+    "mrp":399,
+    "discount":37,
+    "price":250,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Pears Pure & Gentle Body Wash",
+    "mrp":140,
+    "discount":14,
+    "price":120,
+    "blinkIt":120.0,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Dermatouch Face Wash",
+    "mrp":279,
+    "discount":7,
+    "price":260,
+    "blinkIt":265.0,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Lotus White Glow Cream",
+    "mrp":275,
+    "discount":5,
+    "price":260,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Plix Face Wash",
+    "mrp":375,
+    "discount":16,
+    "price":315,
+    "blinkIt":319.0,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Loreal Conditioner",
+    "mrp":279,
+    "discount":-13,
+    "price":315,
+    "blinkIt":319.0,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Loreal Conditioner",
+    "mrp":259,
+    "discount":8,
+    "price":239,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Fogg Deo",
+    "mrp":225,
+    "discount":11,
+    "price":200,
+    "blinkIt":215.0,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Tresemme  Conditioner",
+    "mrp":299,
+    "discount":13,
+    "price":260,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Clean & Clear Vitamin C Face Wash",
+    "mrp":180,
+    "discount":6,
+    "price":170,
+    "blinkIt":175.0,
+    "buyonegetOne":null
+  },
+  {
+    "name":"St Louis Perfume",
+    "mrp":189,
+    "discount":10,
+    "price":170,
+    "blinkIt":175.0,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Bella Vita Perfume",
+    "mrp":249,
+    "discount":12,
+    "price":219,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Urban Gabru",
+    "mrp":399,
+    "discount":3,
+    "price":389,
+    "blinkIt":399.0,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Streax Hair Serum",
+    "mrp":329,
+    "discount":9,
+    "price":299,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Remson Perfume",
+    "mrp":189,
+    "discount":11,
+    "price":169,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Remson Perfume",
+    "mrp":249,
+    "discount":16,
+    "price":209,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Wild Stone Code Deodorant",
+    "mrp":275,
+    "discount":13,
+    "price":239,
+    "blinkIt":252.0,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Bella Vita  Parfum",
+    "mrp":599,
+    "discount":17,
+    "price":499,
+    "blinkIt":499.0,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Bella Vita  Parfum",
+    "mrp":175,
+    "discount":3,
+    "price":169,
+    "blinkIt":175.0,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Ossa Deo",
+    "mrp":230,
+    "discount":13,
+    "price":199,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Ossa Ferfume",
+    "mrp":255,
+    "discount":18,
+    "price":209,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Ks Deodorant",
+    "mrp":230,
+    "discount":18,
+    "price":189,
+    "blinkIt":196.0,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Ramson Perfume",
+    "mrp":189,
+    "discount":11,
+    "price":169,
+    "blinkIt":null,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Vip 919 Ferfume",
+    "mrp":270,
+    "discount":11,
+    "price":239,
+    "blinkIt":265.0,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Vip  Ferfume",
+    "mrp":297,
+    "discount":16,
+    "price":249,
+    "blinkIt":269.0,
+    "buyonegetOne":null
+  },
+  {
+    "name":"Eva Deo",
+    "mrp":160,
+    "discount":7,
+    "price":149,
+    "blinkIt":null,
+    "buyonegetOne":null
   }
- 
 ]

@@ -40,7 +40,7 @@ function A4Page({ layout, products }) {
 
     boxes.push(
       <div className="box" key={i}>
-        <div className="product-name" style={{ fontSize: `${fontSizeTitle}px` }}>
+        <div className="product-name">
           {name}
         </div>
         <div className="price-details">

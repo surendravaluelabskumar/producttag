@@ -1,6 +1,5 @@
 {
-  "products": 
-    [
+  "products": [
   {
     "name": "Cetaphil Gentle Skin Cleanser",
     "mrp": 425,
@@ -88,6 +87,4 @@
   }
  
 ]
-
- 
 }

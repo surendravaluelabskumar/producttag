@@ -36,8 +36,7 @@ function A4Page({ layout, products }) {
       continue;
     }
 
-    const { name, mrp, price, blinkIt } = product;
-    const discount = ((mrp - price) / mrp) * 100;
+    const { name, mrp, price, blinkIt, discount, buyonegetOne } = product;
 
     boxes.push(
       <div className="box" key={i}>
@@ -47,20 +46,23 @@ function A4Page({ layout, products }) {
         <div className="price-details">
           <div className="mrp-price-group">
             <span className="mrp" style={{ fontSize: `${fontSizeMrp}px` }}>
-              MRP: ₹{mrp.toFixed(2)}
+              MRP: ₹{mrp}
             </span>
             <span className="our-price" style={{ fontSize: `${fontSizePrice}px` }}>
-              Our: ₹{price.toFixed(2)}
+              ₹{price}
             </span>
           </div>
-          {blinkIt && (
-            <div className="blinkit-price" style={{ fontSize: `${fontSizePrice}px` }}>
-              Blinkit: ₹{blinkIt.toFixed(2)}
+          <div className="discount-blinkit-group">
+            <div className="discount" style={{ fontSize: `${fontSizeDiscount}px` }}>
+              Disc: {discount}%
             </div>
-          )}
-          <div className="discount" style={{ fontSize: `${fontSizeDiscount}px` }}>
-            Disc: {discount.toFixed(0)}%
+            {blinkIt && (
+              <div className="blinkit-price" style={{ fontSize: `${fontSizePrice}px` }}>
+                Blinkit: ₹{blinkIt}
+              </div>
+            )}
           </div>
+          {buyonegetOne && <div className="buy-one-get-one">Buy 1 Get 1 Free</div>}
         </div>
       </div>
     );

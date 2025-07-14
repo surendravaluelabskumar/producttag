@@ -156,9 +156,7 @@ body {
 }
 
 .discount {
-    width: 100%;
     text-align: left;
-    margin-top: 5px;
 }
 
 .mrp {
@@ -171,6 +169,21 @@ body {
 
 .blinkit-price {
     color: red;
+}
+
+.discount-blinkit-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.buy-one-get-one {
+    color: #d9534f;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
 }
 
 #print-btn {

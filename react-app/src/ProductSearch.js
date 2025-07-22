@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 
-const ProductSearch = ({ onProductSelect }) => {
+const ProductSearch = ({ onProductSelect, onAddAll }) => {
   const [products, setProducts] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -23,14 +23,24 @@ const ProductSearch = ({ onProductSelect }) => {
     onProductSelect(selectedOption);
   };
 
+  const handleAddAll = () => {
+    onAddAll(products);
+  };
+
   return (
-    <Select
-      value={selectedProduct}
-      onChange={handleChange}
-      options={products}
-      isClearable
-      placeholder="Search for a product..."
-    />
+    <div style={{ display: 'flex', alignItems: 'center' }}>
+      <Select
+        value={selectedProduct}
+        onChange={handleChange}
+        options={products}
+        isClearable
+        placeholder="Search for a product..."
+        styles={{ container: (base) => ({ ...base, flex: 1 }) }}
+      />
+      <button onClick={handleAddAll} disabled={!products.length} style={{ marginLeft: '10px' }}>
+        Add All
+      </button>
+    </div>
   );
 };
 

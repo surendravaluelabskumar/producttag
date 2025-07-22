@@ -45,6 +45,10 @@ function App() {
     setSelectedProducts([]);
   };
 
+  const handleAddAllProducts = (allProducts) => {
+    setSelectedProducts([...selectedProducts, ...allProducts]);
+  };
+
   return (
     <div className="container">
       <Sidebar
@@ -53,6 +57,7 @@ function App() {
         onProductSelect={handleProductSelect}
         onAddProduct={handleAddProduct}
         selectedProduct={selectedProduct}
+        onAddAll={handleAddAllProducts}
       />
       <MainContent layout={layout} products={selectedProducts} onClearProducts={handleClearProducts} />
     </div>
